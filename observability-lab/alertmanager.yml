@@ -1,9 +1,22 @@
 global:
   resolve_timeout: 5m
+  smtp_smarthost: 'smtp.gmail.com:587'
+  smtp_from: 'aguinaldoamerico2@gmail.com'
+  smtp_auth_username: 'aguinaldoamerico2@gmail.com'
+  smtp_auth_password: 'ynoi aiyg oiep qgug'
+
 route:
-  receiver: webhook_receiver
-receivers:
-    - name: webhook_receiver
-      webhook_configs:
-        - url: 'https://webhook.site/62e5b561-f020-45cb-9d27-d1abeae67be9'
-          send_resolved: false
+  receiver: 'gmail'
+  repeat_interval: 1h
+
+  
+receivers:    
+- name: 'gmail'
+  email_configs:
+  - to: 'aguinaldoamerico2@gmail.com'
+    from: 'aguinaldoamerico2@gmail.com'
+    smarthost: smtp.gmail.com:587
+    auth_username: 'aguinaldoamerico2@gmail.com'
+    auth_identity: 'aguinaldoamerico2@gmail.com'
+    auth_password: 'ynoi aiyg oiep qgug'
+    send_resolved: true
