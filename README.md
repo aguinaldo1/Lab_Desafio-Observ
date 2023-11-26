@@ -1,3 +1,10 @@
+# Laboratório Prometheus
+
+> **Status:** Laboratório aplicado e orientado por ***Prof. Patrick J. Cardoso*** - Treinamento Observabilidade -O2B Academy
+> https://github.com/patrickjcardoso
+## Descrição do Laboratório:
+Desafio proposto para aplicação de conhecimento.
+
 # Atividade Prática Observabilidade
 
 ## Objetivo do Laboratório:
