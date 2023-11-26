@@ -1,11 +1,7 @@
-# Laboratório Prometheus
+# Atividade Prática Observabilidade
 
 > **Status:** Laboratório aplicado e orientado por ***Prof. Patrick J. Cardoso*** - Treinamento Observabilidade -O2B Academy
 > https://github.com/patrickjcardoso
-## Descrição do Laboratório:
-Desafio proposto para aplicação de conhecimento.
-
-# Atividade Prática Observabilidade
 
 ## Objetivo do Laboratório:
 
@@ -15,16 +11,10 @@ Criar um ambiente de observabilidade usando Prometheus e Grafana para monitorar 
 
 * Linux (Ubuntu based)
 * Python Application
+* Docker/Docker-compose
 * Prometheus
 * Grafana
-
-## Pré-requisitos:
-
-* Você precisará de uma máquina Linux (pode ser uma VM, um servidor ou mesmo uma máquina local com Docker instalado).
-* Conhecimento básico de linha de comando do Linux.
-* Docker instalado na máquina.
-* Uma aplicação de exemplo para monitorar (exemplo simples em Python).
-* Clonar o repositório da atividade.
+* Alertmanager
 
 ## Passos:
 
@@ -37,8 +27,7 @@ Criar um ambiente de observabilidade usando Prometheus e Grafana para monitorar 
     $ sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
     $ sudo chmod +x /usr/local/bin/docker-compose
    ```
-  
-    
+
 1.2. **Clone o repositório** e acesse o diretório do laboratório:
 
     $ cd desafio_o11y/observability-lab
@@ -106,6 +95,8 @@ python app.py
 2.5 Testando a aplicação python.
 
 Sua aplicação estará disponível em http://localhost:3001. Você pode acessar a página inicial e também verificar as métricas expostas em http://localhost:3001/metrics.
+
+![img1](src/evidencias/app.png)
 
 ### Passo 3: Gerando métricas na aplicação
 
