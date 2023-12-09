@@ -1,4 +1,5 @@
 # Atividade Prática Observabilidade
+![fluxograma](https://github.com/aguinaldo1/Lab_Desafio-Observ/assets/49000442/d53eedae-6cef-4e69-8157-76b8e5c8f06a)
 
 > **Status:** Laboratório aplicado e orientado por ***Prof. Patrick J. Cardoso*** - Treinamento Observabilidade -O2B Academy
 > https://github.com/patrickjcardoso
